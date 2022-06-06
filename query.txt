@@ -1,0 +1,54 @@
+CREATE DATABASE animedb;
+
+USE animedb;
+
+SELECT * FROM billboard;
+
+INSERT INTO billboard 
+(anime_name, creator, release_date, finish_date, anime_description, url_image) VALUES
+("NARUTO", "Masashi Kishimoto", "1999-09-21", "2014-11-10", "es una serie de manga escrita
+ e ilustrada por Masashi Kishimoto. La obra narra la historia de un ninja huérfano adolescente 
+ llamado Naruto Uzumaki, cuyos padres murieron en el ataque del Zorro Demonio de Nueve Colas, 
+ y quien aspira a convertirse en Hokage (líder de su aldea) con el propósito de ser reconocido 
+ como alguien importante dentro de la aldea y entre sus compañeros.", "url/naruto-image");
+ 
+INSERT INTO billboard 
+(anime_name, creator, release_date, finish_date, anime_description, url_image) VALUES
+("DRAGON BALL", "Akira Toriyama", "1984-10-20", "1995-06-05", "es un manga escrito e ilustrado 
+por Akira Toriyama. Fue publicado originalmente en la revista Shonen Jump, de la editorial japonesa 
+Shueisha, entre 1984 y 1995. Su trama describe las aventuras de Goku, un guerrero saiyajin, cuyo 
+fin es proteger a la Tierra de otros seres que quieren conquistarla y exterminar a la humanidad. 
+Conforme transcurre la trama, conoce a otros personajes que le ayudan en este propósito. El nombre 
+de la serie proviene de unas esferas mágicas que al ser reunidas invocan a un dragón que concede 
+deseos. En varias ocasiones resultan útiles tanto para Goku y sus amigos como para la humanidad, 
+aunque también son procuradas de forma constante por algunos seres malignos.", "url/dragonball-image");
+
+INSERT INTO billboard 
+(anime_name, creator, release_date, finish_date, anime_description, url_image) VALUES
+("ONE PIECE", "Eiichiro Oda", "1997-06-22", null, "es un manga escrito e ilustrado por el mangaka japonés 
+Eiichiro Oda. Comenzó a publicarse en la revista japonesa Weekly Shonen Jump el 22 de julio de 1997 y a la 
+fecha se han publicado 102 volúmenes. Por otra parte, Toei Animation realiza el anime que adapta el manga, 
+siendo transmitido en Fuji TV desde el 20 de octubre de 1999 hasta la actualidad. Larp Editores licenció el 
+manga en Argentina y posteriormente fue retomado por Ivrea. En España principalmente la publicación estaba 
+a manos de Planeta DeAgostini y después pasó a manos de su división Planeta Cómic, encargada actualmente de 
+su publicación. En México fue publicado por Editorial Toukan en un principio y, más tarde, por Panini Comics.",
+"url/hunterxhunter-image");
+
+INSERT INTO billboard 
+(anime_name, creator, release_date, finish_date, anime_description, url_image) VALUES
+("HUNTER X HUNNTER", "Yoshihiro Togashi", "1998-03-03", null, "es una serie de manga escrita e ilustrada 
+por Yoshihiro Togashi. La historia tiene como protagonista a Gon Freecss, un niño de doce años que 
+desea encontrar a su padre a toda costa, por lo que decide convertirse en cazador, justo como él, y 
+de alguna forma hallar su paradero. A medida que avanza la historia, Gon se hace amigo de otros tres 
+aspirantes a cazador: Leorio, Kurapika y Killua, quienes lo acompañarán en sus aventuras a lo largo del anime",
+"url/hunterxhunter-image");
+
+INSERT INTO billboard 
+(anime_name, creator, release_date, finish_date, anime_description, url_image) VALUES
+("JUJUTSU KAISEN", "Gege Akutami", "2018-03-05", null, "es una serie de manga japonés escrita e ilustrada 
+por Gege Akutami. Shueisha publica sus capítulos en la revista Shukan Shonen Jump desde el 5 de marzo de 
+2018 y los ha recopilado y publicado en diecinueve volúmenes tankobon a finales de 2022. La historia gira 
+en torno al estudiante Yuji Itadori, quien se une a una organización secreta de hechiceros para matar a una 
+poderosa maldición llamada Ryomen Sukuna tras convertirse en su anfitrión.", "url/jujutsukaisen-image");
+
+UPDATE billboard SET url_image="url/onepiece-image" WHERE id_billboard=3;
